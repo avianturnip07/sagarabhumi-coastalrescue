@@ -1,0 +1,225 @@
+{
+ "_meta": "ILLUSTRATIVE PLACEHOLDER DATA. Coordinates are approximate and NOT official BMKG/BASARNAS/BPBD records. Replace with verified datasets before any real use.",
+ "shelters": [
+  {
+   "id": "SAMPLE-PAD-01",
+   "name": "Shelter Contoh Padang 1",
+   "city": "Padang",
+   "lat": -0.932,
+   "lon": 100.379,
+   "elevation_m": 28,
+   "capacity": 1500,
+   "source_agency": "BMKG",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-PAD-02",
+   "name": "Shelter Contoh Padang 2",
+   "city": "Padang",
+   "lat": -0.96,
+   "lon": 100.385,
+   "elevation_m": 35,
+   "capacity": 900,
+   "source_agency": "BASARNAS",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-BA-01",
+   "name": "Shelter Contoh Banda Aceh 1",
+   "city": "Banda Aceh",
+   "lat": 5.532,
+   "lon": 95.346,
+   "elevation_m": 18,
+   "capacity": 2000,
+   "source_agency": "BMKG",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-BA-02",
+   "name": "Shelter Contoh Banda Aceh 2",
+   "city": "Banda Aceh",
+   "lat": 5.525,
+   "lon": 95.32,
+   "elevation_m": 22,
+   "capacity": 1200,
+   "source_agency": "BPBD",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-MED-01",
+   "name": "Shelter Contoh Medan 1",
+   "city": "Medan",
+   "lat": 3.57,
+   "lon": 98.66,
+   "elevation_m": 30,
+   "capacity": 800,
+   "source_agency": "BPBD",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-MED-02",
+   "name": "Shelter Contoh Medan 2",
+   "city": "Medan",
+   "lat": 3.62,
+   "lon": 98.69,
+   "elevation_m": 26,
+   "capacity": 1000,
+   "source_agency": "BASARNAS",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-BL-01",
+   "name": "Shelter Contoh Bandar Lampung 1",
+   "city": "Bandar Lampung",
+   "lat": -5.43,
+   "lon": 105.26,
+   "elevation_m": 45,
+   "capacity": 700,
+   "source_agency": "BMKG",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-BL-02",
+   "name": "Shelter Contoh Bandar Lampung 2",
+   "city": "Bandar Lampung",
+   "lat": -5.4,
+   "lon": 105.28,
+   "elevation_m": 60,
+   "capacity": 1100,
+   "source_agency": "BPBD",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-BEN-01",
+   "name": "Shelter Contoh Bengkulu 1",
+   "city": "Bengkulu",
+   "lat": -3.82,
+   "lon": 102.29,
+   "elevation_m": 25,
+   "capacity": 900,
+   "source_agency": "BMKG",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-BEN-02",
+   "name": "Shelter Contoh Bengkulu 2",
+   "city": "Bengkulu",
+   "lat": -3.78,
+   "lon": 102.28,
+   "elevation_m": 30,
+   "capacity": 600,
+   "source_agency": "BASARNAS",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-PEK-01",
+   "name": "Shelter Contoh Pekanbaru 1",
+   "city": "Pekanbaru",
+   "lat": 0.52,
+   "lon": 101.44,
+   "elevation_m": 30,
+   "capacity": 800,
+   "source_agency": "BPBD",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-PEK-02",
+   "name": "Shelter Contoh Pekanbaru 2",
+   "city": "Pekanbaru",
+   "lat": 0.49,
+   "lon": 101.46,
+   "elevation_m": 28,
+   "capacity": 500,
+   "source_agency": "BASARNAS",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-PAR-01",
+   "name": "Shelter Contoh Pariaman 1",
+   "city": "Pariaman",
+   "lat": -0.6,
+   "lon": 100.15,
+   "elevation_m": 22,
+   "capacity": 1000,
+   "source_agency": "BMKG",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-PAR-02",
+   "name": "Shelter Contoh Pariaman 2",
+   "city": "Pariaman",
+   "lat": -0.64,
+   "lon": 100.16,
+   "elevation_m": 30,
+   "capacity": 700,
+   "source_agency": "BPBD",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-LHO-01",
+   "name": "Shelter Contoh Lhokseumawe 1",
+   "city": "Lhokseumawe",
+   "lat": 5.16,
+   "lon": 97.17,
+   "elevation_m": 20,
+   "capacity": 900,
+   "source_agency": "BMKG",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-LHO-02",
+   "name": "Shelter Contoh Lhokseumawe 2",
+   "city": "Lhokseumawe",
+   "lat": 5.2,
+   "lon": 97.14,
+   "elevation_m": 18,
+   "capacity": 600,
+   "source_agency": "BASARNAS",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-DUM-01",
+   "name": "Shelter Contoh Dumai 1",
+   "city": "Dumai",
+   "lat": 1.65,
+   "lon": 101.45,
+   "elevation_m": 15,
+   "capacity": 500,
+   "source_agency": "BPBD",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-DUM-02",
+   "name": "Shelter Contoh Dumai 2",
+   "city": "Dumai",
+   "lat": 1.68,
+   "lon": 101.43,
+   "elevation_m": 18,
+   "capacity": 400,
+   "source_agency": "BMKG",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-JAM-01",
+   "name": "Shelter Contoh Jambi 1",
+   "city": "Jambi",
+   "lat": -1.6,
+   "lon": 103.62,
+   "elevation_m": 12,
+   "capacity": 300,
+   "source_agency": "BPBD",
+   "is_active": true
+  },
+  {
+   "id": "SAMPLE-PAL-01",
+   "name": "Shelter Contoh Palembang 1",
+   "city": "Palembang",
+   "lat": -2.97,
+   "lon": 104.77,
+   "elevation_m": 10,
+   "capacity": 300,
+   "source_agency": "BPBD",
+   "is_active": true
+  }
+ ]
+}
