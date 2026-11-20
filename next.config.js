@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
-  poweredByHeader: false, // sembunyikan header X-Powered-By
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/sagarabhumi-coastalrescue',
 };
 
 module.exports = nextConfig;
