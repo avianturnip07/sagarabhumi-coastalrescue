@@ -1,26 +1,41 @@
-import { NextResponse } from 'next/server';
-import { errorResponse, parsePoint } from '@/lib/api';
 import { getRouter } from '@/lib/routing';
 import { round, routeMetrics } from '@/lib/shared';
 
-export const runtime = 'nodejs';
-export const dynamic = 'force-dynamic';
-export const maxDuration = 15; // satu panggilan OSRM (timeout 8 detik) ditambah overhead
-
-// GET /api/route?from_lat=&from_lon=&to_lat=&to_lon=
-export async function GET(request) {
-  try {
-    const params = request.nextUrl.searchParams;
-    const from = parsePoint(params, 'from_lat', 'from_lon', 'Titik awal');
-    const to = parsePoint(params, 'to_lat', 'to_lon', 'Tujuan');
-    const route = await getRouter().route(from, to);
-
-    const m = routeMetrics(route);
-    return NextResponse.json({
-      route,
-      summary: { distance_km: round(m.km, 2), drive_min: m.driveMin, walk_min: m.walkMin },
-    }, { headers: { 'Cache-Control': 'no-store' } });
-  } catch (err) {
-    return errorResponse(err);
+function normalizePoint(point, label) {
+  if (!point || typeof point !== 'object') {
+    throw new Error(`${label} tidak valid.`);
   }
+
+  const lat = Number(point.lat ?? point.latitude);
+  const lon = Number(point.lon ?? point.lng ?? point.longitude);
+
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+    throw new Error(`Koordinat ${label} harus berupa angka yang valid.`);
+  }
+
+  if (lat < -90 || lat > 90 || lon < -180 || lon > 180) {
+    throw new Error(`Koordinat ${label} di luar rentang geografis.`);
+  }
+
+  return { lat, lon };
+}
+
+/**
+ * Menghitung rute evakuasi dan metrik jarak/waktu langsung di sisi klien
+ * untuk kebutuhan static export (GitHub Pages).
+ */
+export async function computeEvacuationRoute(rawFrom, rawTo) {
+  const from = normalizePoint(rawFrom, 'Titik awal');
+  const to = normalizePoint(rawTo, 'Tujuan');
+  const route = await getRouter().route(from, to);
+  const metrics = routeMetrics(route);
+
+  return {
+    route,
+    summary: {
+      distance_km: round(metrics.km, 2),
+      drive_min: metrics.driveMin,
+      walk_min: metrics.walkMin,
+    },
+  };
 }
