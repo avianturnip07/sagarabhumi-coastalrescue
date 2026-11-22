@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/sagarabhumi-coastalrescue',
+  basePath: 'sagarabhumi-coastalrescue',
 };
 
 module.exports = nextConfig;
